@@ -1,0 +1,20 @@
+package com.web.entity;
+
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.*;
+
+@Entity
+@Table(name = "cate_parents")
+@Getter
+@Setter
+public class CateParents {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
+    private Long id;
+
+    private String name;
+}

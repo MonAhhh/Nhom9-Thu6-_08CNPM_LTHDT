@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="css/stylenew.css">
+    <script src="js/menu.js"></script>
+    <script src="js/product.js"></script>
+    <script>
+        window.onload = function(){
+            loadByApiSearchGet();
+            loadmenu();
+            loadFooter();
+            loadByApiSearchPost();
+            loadJsoupSearch();
+        }
+    </script>
+</head>
+<body>
+<div id="menu"></div>
+<div style="width: 84%; margin: auto;margin-top: 100px;">
+    <a href="index.html" class="tat">Trang chủ / </a><a class="tintucs" href="product.html">Sản phẩm</span></a>
+    <br>
+    <div class="filter col-md-6">
+        <label for="selectgia">Sắp xếp theo giá</label>
+        <select id="selectgia" class="form-control">
+            <option value="1">Từ thấp đến cao</option>
+            <option value="2">Từ cao đến thấp</option>
+        </select>
+    </div>
+    <div class="col-md-3 divfilter">
+        <button onclick="loc()" class="btn btn-primary btnloc">Lọc</button>
+    </div>
+</div>
+<div class="maincontent" style="margin-top: 20px;">
+    <div class="pageblog">
+        <div id="listallproduct" class="row" style="margin-top: 20px;">
+            <!-- <a id="p16533779" class="grid__product-cell" href="https://www.sosanhgia.com/p225650-iphone-12-128gb.html">
+                <div class="grid__product-img">
+                    <img width="200" height="200" data-src="https://img.sosanhgia.com/images/200x200/94d898f893654355a3e8d68c3011410e/iphone-12-128gb.jpeg" class=" lazyloaded" alt="iPhone 12 128GB" onerror="javascript:this.src='https://img.sosanhgia.com/images/200x200/c08a2255eea54e828c3b22132ced78f2/image.jpg'" src="https://img.sosanhgia.com/images/200x200/94d898f893654355a3e8d68c3011410e/iphone-12-128gb.jpeg">
+                </div>
+                <button class="btn-product">So sánh giá</button>
+                <div class="grid__product-name">iPhone 12 128GB</div>
+                <div class="grid__product-price product-price">16.990.000</div>
+            </a> -->
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="contentdm">
+            <div id="listdm">
+                <p class="dmucsp">Danh mục sản phẩm</p>
+                <div id="listcategory">
+                    <li><p class="catename">Di dong-dien tu</p></li>
+                    <li><p class="catename">Di dong-dien tu</p></li>
+                    <li><p class="catename">Di dong-dien tu</p></li>
+                </div>
+                <a href="blog.html" class="dmucsp tintuchu">Tin tức hữu ích</a>
+            </div>
+            <div id="listdmcon">
+                <div id="listccon">
+                    <li><p class="catename">Di dong-dien tu</p></li>
+                    <li><p class="catename">Di dong-dien tu</p></li>
+                    <li><p class="catename">Di dong-dien tu</p></li>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>

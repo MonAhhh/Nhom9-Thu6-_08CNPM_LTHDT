@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="css/stylenew.css">
+    <script src="js/menu.js"></script>
+    <script src="js/blog.js"></script>
+    <script>
+        window.onload = function(){
+            loadmenu();
+            loadFooter();
+            loadBlogHome();
+        }
+    </script>
+</head>
+<body>
+<div id="menu">
+   
+</div>
+<div class="maincontent">
+    <div class="container">
+        <div class="banner">
+            <div class="bannersingle">
+                <img src="image/b1.webp">
+            </div>
+            <div class="bannersingle">
+                <img src="image/b2.webp">
+            </div>
+            <div class="bannersingle">
+                <img src="image/b3.webp">
+            </div>
+        </div>
+        <div class="contentbotr">
+            <p class="lbkm">Khuyến mãi Hot nhất<br>cho hôm nay</p>
+            <div class="listkm">
+                <div class="kmsingle"><img src="image/km.webp"></div>
+                <div class="kmsingle"><img src="image/km1.webp"></div>
+            </div>
+            <div class="listkm">
+                <div class="kmsingle"><img src="image/km2.webp"></div>
+                <div class="kmsingle"> <img src="image/km3.webp"></div>
+            </div>
+            <p class="lbkm">Thông tin mua sắm<br>hữu ích</p>
+            <div class="row" id="listbloghome">
+                <div class="col-md-6">
+                    <a href="" class="blogname">Top 15 loại dầu nhớt chất lượng tốt được ưa chuộng nhất 2022</a>
+                    <div class="contentblog">
+                        <a href=""><img src="image/blog.webp" class="imgblog"></a>
+                        <p class="desc">
+                            <p class="descontent">
+                                <a href="" class="xemthemblog">Xem thêm </a><span class="ngaydang">(2023-02-19)</span><br>
+                                Dầu nhớt là sản phẩm không thể thiếu nhằm kéo dài tuổi 
+                                thọ và giúp xe vận hành êm ái. Vậy thương hiệu dầu nhớt nào tốt
+                                 nhất hiện nay? Cùng nhau tham khảo top 15 loại dầu nhớt chất lượng 
+                                 tốt được ưa chuộng nhất qua bài viết dưới đây</p>.
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="footer"></div>
+<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="contentdm">
+            <div id="listdm">
+                <p class="dmucsp">Danh mục sản phẩm</p>
+                <div id="listcategory">
+                    <li onclick=""><p class="catename">Di dong-dien tu</p></li>
+                    <li><p class="catename">Di dong-dien tu</p></li>
+                    <li><p class="catename">Di dong-dien tu</p></li>
+                </div>
+                <a href="blog.html" class="dmucsp tintuchu">Tin tức hữu ích</a>
+            </div>
+            <div id="listdmcon">
+                <div id="listccon">
+                    <li><p class="catename">Di dong-dien tu</p></li>
+                    <li><p class="catename">Di dong-dien tu</p></li>
+                    <li><p class="catename">Di dong-dien tu</p></li>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>
